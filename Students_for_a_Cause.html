@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students for a Cause - Whitman Middle School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    /* Navbar */
+    header {
+      background: #000;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #e63946;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #e63946;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1520975922031-a02b48e74c2d") center/cover;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Sections */
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h3 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      color: #e63946;
+    }
+
+    .events {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .event-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .event-card h4 {
+      margin-top: 0;
+      color: #333;
+    }
+    .event-card p {
+      color: #555;
+    }
+
+    /* Sign-Up Form */
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+    form button {
+      margin-top: 1.5rem;
+      background: #e63946;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #b71c1c;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>Students for a Cause</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="mailto:emily.devine-topham@whrsd.org">Get in Touch</a>
+      <a href="#signup">Sign Up</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h2>Making a Difference at Whitman Middle School</h2>
+    <p>Join us in creating positive change through leadership, service, and action.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h3>About Us</h3>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      Students for a Cause is the official student council of Whitman Middle School. 
+      We empower students to lead, organize events, and give back to the community. 
+      Our mission is to inspire positive change and create a welcoming school environment.
+    </p>
+  </section>
+
+  <!-- Events -->
+  <section id="events">
+    <h3>Upcoming Events</h3>
+    <div class="events">
+      <div class="event-card">
+        <h4>Fall Food Drive</h4>
+        <p>Help us collect canned goods for local families in need. October 15 - 30.</p>
+      </div>
+      <div class="event-card">
+        <h4>Spirit Week</h4>
+        <p>Show your school pride with themed days! November 5 - 9.</p>
+      </div>
+      <div class="event-card">
+        <h4>Holiday Fundraiser</h4>
+        <p>Join us for a winter fundraiser to support our community outreach programs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sign Up -->
+  <section id="signup">
+    <h3>Sign Up</h3>
+    <form action="https://docs.google.com/forms/u/1/d/1_3JFhaUY6S4fDgOfcv8ZZzHIv_Wtl7XRpN5PgM11GJE/previewResponse" method="POST" target="_blank">
+      <!-- Replace entry.123456 with actual IDs from your Google Form -->
+      <label for="name">Name</label>
+      <input type="text" name="entry.1900686273" id="name" required>
+
+      <label for="grade">Grade</label>
+      <input type="text" name="entry.1156782880" id="grade" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="entry.1369315131" id="email" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Students for a Cause - Whitman Middle School</p>
+    <p>Contact: studentcouncil@whitmanms.edu</p>
+  </footer>
+
+</body>
+</html>
+
+
