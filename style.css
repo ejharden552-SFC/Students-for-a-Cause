@@ -42,7 +42,7 @@ header h1 {
   margin: 0;
   color: white;
 }
-button {
+button body{
   background-color: #ff0000; /* Red background color */
   color: #ffffff; /* White text color */
   border: none; /* Remove default border */
