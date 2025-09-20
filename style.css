@@ -42,24 +42,7 @@ header h1 {
   margin: 0;
   color: white;
 }
-.email-button {
-  display: inline-block;
-  background-color: #b30000; /* Red */
-  color: white;
-  font-family: 'Poppins', sans-serif; /* Match your inviting font */
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: 15px;
-}
 
-.email-button:hover {
-  background-color: #800000; /* Darker red on hover */
-  transform: scale(1.05);
-}
 
 nav {
   display: flex;
@@ -202,4 +185,22 @@ footer {
 .highlight-box h3 {
   color: #b30000;
   margin-bottom: 10px;
+}
+.email-button {
+  display: inline-block;
+  background-color: #b30000; /* Red */
+  color: white;
+  font-family: 'Poppins', sans-serif; /* Match your inviting font */
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+}
+
+.email-button:hover {
+  background-color: #800000; /* Darker red on hover */
+  transform: scale(1.05);
 }
