@@ -186,15 +186,14 @@ footer {
   color: #b30000;
   margin-bottom: 10px;
 }
-.content-box.full-width {
-  grid-column: 1 / -1; /* span all columns */
-}
-.content-box {
+.contentcontact-box {
   background: white;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
+.contentcontact-box.full-width {
+  grid-column: 1 / -1; /* span all columns */
 }
 .email-button {
   display: inline-block;
