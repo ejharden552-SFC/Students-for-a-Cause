@@ -189,6 +189,14 @@ footer {
 .highlight-box.full-width {
   grid-column: 1 / -1; /* span all columns */
 }
+.highlight-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 .email-button {
   display: inline-block;
   background-color: #b30000; /* Red */
