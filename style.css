@@ -12,7 +12,7 @@ body {
 
 /* === Header === */
 header {
-  background-color: #111;
+  background-color: #e63946; /* Red header */
   color: white;
   padding: 10px 20px;
   display: flex;
@@ -21,7 +21,7 @@ header {
 }
 
 header .logo {
-  height: 50px;
+  height: 55px;
 }
 
 nav {
@@ -33,22 +33,22 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s;
+  transition: opacity 0.3s;
 }
 
 nav a:hover {
-  color: #e63946; /* Red hover */
+  opacity: 0.8;
 }
 
 /* Highlight active page */
 nav a.active {
-  color: #e63946;
+  text-decoration: underline;
 }
 
 /* === Main Content === */
 main {
   flex: 1;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
@@ -68,19 +68,14 @@ h1, h2 {
   background: white;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.info-box:hover {
-  transform: translateY(-5px);
-}
-
-/* Special: "Better Together" spans full width */
 .info-box.large {
   grid-column: span 2;
-  background: #e63946;
-  color: white;
+  background: #eee;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* === Gallery === */
@@ -126,7 +121,7 @@ h1, h2 {
 /* === Buttons === */
 button,
 a.button {
-  background-color: #e63946; /* Red */
+  background-color: #e63946; /* Red button */
   color: white;
   border: none;
   padding: 12px 20px;
@@ -147,7 +142,7 @@ a.button:hover {
 
 /* === Footer === */
 footer {
-  background: #111;
+  background: #222;
   color: white;
   text-align: center;
   padding: 15px;
